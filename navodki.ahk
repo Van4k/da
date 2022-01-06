@@ -36,7 +36,7 @@ chatRead()
 
 getLines()
 {
-	file := fileOpen("C:\Games\MTA Province\MTA\MTA\logs\console.log", "r`r`n", "UTF-8")  ;ПУТЬ СЮДА
+	file := fileOpen("C:\Games\MTA Province\MTA\MTA\logs\console.log", "r`r`n", "UTF-8") ; СЃРјРµРЅРё РїСѓС‚СЊ Рє Р»РѕРіР°Рј РїСЂРѕРІС‹
 	lines := file.read()
 	file.close()
 
@@ -57,21 +57,21 @@ isAccessCmd(cmd)
 }
 
 F2::
-if (execCmd)
-{
-	Send, {F8}
-	sleep, 30
-	Send, "{vkA2 down}"
-	sleep, 30
-	Send, {sc1E}
-	sleep, 30
-	Send,"{vkA2 up}"{scE}{scE}
-	sleep, 30 
-	Send, a {+}{Enter}
-	sleep, 75
-	pasteText(execCmd, 0)
-	execCmd := ""
-}
+	if (execCmd)
+	{
+		Send, {F8}
+		sleep, 30
+		Send, "{vkA2 down}"
+		sleep, 30
+		Send, {sc1E}
+		sleep, 30
+		Send,"{vkA2 up}"{scE}{scE}
+		sleep, 30 
+		Send, a {+}{Enter}
+		sleep, 75
+		pasteText(execCmd, 0)
+		execCmd := ""
+	}
 return
 
 pasteText(text, wait := 0)
@@ -98,38 +98,35 @@ pasteText(text, wait := 0)
 	copy(lastcopy)
 }
 
-
 Copy(Text, LocaleID=0x419)
 {
 	CF_TEXT:=1, CF_LOCALE:=16, GMEM_MOVEABLE:=2
 	TextLen :=StrLen(Text)
-	DllCall("EmptyClipboard") ; Очистка.
-	HmemText :=DllCall("GlobalAlloc", "UInt", GMEM_MOVEABLE, "UInt", TextLen+1) ; Запрос перемещаемой
-	HmemLocale:=DllCall("GlobalAlloc", "UInt", GMEM_MOVEABLE, "UInt", 4) ; памяти, возвращаются хэндлы.
+	DllCall("EmptyClipboard") ; 
+	HmemText :=DllCall("GlobalAlloc", "UInt", GMEM_MOVEABLE, "UInt", TextLen+1) ; 
+	HmemLocale:=DllCall("GlobalAlloc", "UInt", GMEM_MOVEABLE, "UInt", 4) ; 
 	If(!HmemText || !HmemLocale)
 		Return
-	PtrText :=DllCall("GlobalLock", "UInt", HmemText) ; Фиксация памяти, хэндлы конвертируются
-	PtrLocale :=DllCall("GlobalLock", "UInt", HmemLocale) ; в указатели (адреса).
-	DllCall("EmptyClipboard") ; Очистка.
-	DllCall("msvcrt\memcpy", "UInt", PtrText, "Str", Text, "UInt", TextLen+1, "Cdecl") ; Копирование текста.
-	NumPut(LocaleID, PtrLocale+0) ; Запись идентификатора локали.
-	DllCall("GlobalUnlock", "UInt", HmemText) ; Расфиксация памяти.
+	PtrText :=DllCall("GlobalLock", "UInt", HmemText) ; 
+	PtrLocale :=DllCall("GlobalLock", "UInt", HmemLocale) ;
+	DllCall("EmptyClipboard") ; 
+	DllCall("msvcrt\memcpy", "UInt", PtrText, "Str", Text, "UInt", TextLen+1, "Cdecl") ; 
+	NumPut(LocaleID, PtrLocale+0) ; 
+	DllCall("GlobalUnlock", "UInt", HmemText) ;
 	DllCall("GlobalUnlock", "UInt", HmemLocale)
-	If not DllCall("OpenClipboard", "UInt", 0) ; Открытие буфера обмена.
+	If not DllCall("OpenClipboard", "UInt", 0) ; 
 	{
-		DllCall("GlobalFree", "UInt", HmemText) ; Освобождение памяти,
-		DllCall("GlobalFree", "UInt", HmemLocale) ; если открыть не удалось.
+		DllCall("GlobalFree", "UInt", HmemText) ; 
+		DllCall("GlobalFree", "UInt", HmemLocale) ;
 		Return
 	}
-	DllCall("EmptyClipboard") ; Очистка.
-	DllCall("SetClipboardData", "UInt", CF_TEXT, "UInt", HmemText) ; Помещение данных.
-	DllCall("EmptyClipboard") ; Очистка.
-	DllCall("SetClipboardData", "UInt", CF_TEXT, "UInt", HmemText) ; Помещение данных.
+	DllCall("EmptyClipboard") ; 
+	DllCall("SetClipboardData", "UInt", CF_TEXT, "UInt", HmemText) ; 
+	DllCall("EmptyClipboard") ; 
+	DllCall("SetClipboardData", "UInt", CF_TEXT, "UInt", HmemText) ; 
 	DllCall("SetClipboardData", "UInt", CF_LOCALE, "UInt", HmemLocale)
-	DllCall("CloseClipboard") ; Закрытие.
+	DllCall("CloseClipboard") ; 
 }
-
-
 
 ClipGetText(CodePage=1251)
 {
@@ -140,7 +137,7 @@ ClipGetText(CodePage=1251)
 	{
 		Format:=DllCall("EnumClipboardFormats", "UInt", Format) 
 		If(Format=0 || Format=CF_TEXT || Format=CF_UNICODETEXT)
-		Break
+			Break
 	}
 	If(Format=0) { 
 		DllCall("CloseClipboard")
@@ -163,9 +160,9 @@ ClipGetText(CodePage=1251)
 		VarSetCapacity(Text, TextLen+1)
 		DllCall("WideCharToMultiByte", "UInt", CodePage, "UInt", 0, "UInt", PtrTextW
 			, "Int", TextLen+1, "Str", Text, "Int", TextLen+1
-			, "UInt", 0, "Int", 0) 
+		, "UInt", 0, "Int", 0) 
 		DllCall("GlobalUnlock", "UInt", HmemTextW)
 	}
 	DllCall("CloseClipboard") 
-	Return Text
+Return Text
 }
