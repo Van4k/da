@@ -1,7 +1,6 @@
 ﻿#SingleInstance force
 #Persistent
 
-
 FormatTime, time,, HH:mm:ss
 
 SetTimer, Timer1, 600000
@@ -10,27 +9,27 @@ SetTimer, Random1, 3000
 SetTimer, refresh, 1000
 Settimer, Dd, 1000
 
-FormatSeconds(NumberOfSeconds)  ; Преобразует заданное число секунд
-                                ; к формату hh:mm:ss.
+FormatSeconds(NumberOfSeconds) ; Преобразует заданное число секунд
+; к формату hh:mm:ss.
 {
-    time = %Clck%
-    time += %NumberOfSeconds%, seconds
-    FormatTime, mmss, %time%, mm:ss
-    return NumberOfSeconds//3600 ":" mmss  
+	time = %Clck%
+	time += %NumberOfSeconds%, seconds
+	FormatTime, mmss, %time%, mm:ss
+	return NumberOfSeconds//3600 ":" mmss 
 }
 
 Clck := 0
 Dd:
-Clck := %Clck%+1000
+	Clck := %Clck%+1000
 return
-
+/*
 refresh:
 FormatTime, time,, HH:mm:ss
 ToolTip, ———ПАНЕЛЬ АФК———`nВремя: %time%`nAFK:Активен`nДоклад:%Clck%, 1690, 320
 return 
-
+*/
 Random1:
-Random, Rand3, 4,10
+	Random, Rand3, 4,10
 return
 
 Timer1:
@@ -57,5 +56,4 @@ return
 End::
 ExitApp
 return
-
 
