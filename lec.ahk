@@ -257,7 +257,7 @@
 
 	:?:/trenOFP::
 		Sleep(100)
-		Progress, b y10 w200, Тренировка ОФП, progressNUM
+		Progress, b y10 w200, ,Тренировка ОФП, progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка ОФП.{Enter}
@@ -296,6 +296,358 @@
 		Sendinput , {F12}
 		Progress, 100
 		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/trenOtj::
+		Sleep(100)
+		Progress, b y10 w200, ,Отжимания, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка отжимания.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка отжимания окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/trenBegGus::
+		Sleep(100)
+		Progress, b y10 w200, ,Тренировка бег гуськом, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка бег гуськом.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка бег гуськом окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/trenBeg::
+		Sleep(100)
+		Progress, b y10 w200, ,Тренировка бег , progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка бег.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка бег окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/trenBegPrg::
+		Sleep(100)
+		Progress, b y10 w200, ,Тренировка бег с прыжками, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка бег с прыжками.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка бег с прыжками окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/trenPolt::
+		Sleep(100)
+		Progress, b y10 w200, ,Тренировка полтора, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка полтора.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка полтора окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/trenPris::
+		Sleep(100)
+		Progress, b y10 w200, ,Тренировка присядания, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка присядания.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка присядания окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/trenPlank::
+		Sleep(100)
+		Progress, b y10 w200, ,Тренировка стойка в планке, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка стойка в планке.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка стойка в планке окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/trenPostr::
+		Sleep(100)
+		Progress, b y10 w200, ,Тренировка построение,progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка построение.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка построение окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(400)
 		Progress, Off
 	return
 /*
