@@ -332,7 +332,7 @@
 
 	:?:/trenOFP::
 		Sleep(100)
-		Progress, b y10 w200, ,Тренировка ОФП, progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Тренировка ОФП, progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка ОФП.{Enter}
@@ -383,7 +383,7 @@
 
 	:?:/trenOtj::
 		Sleep(100)
-		Progress, b y10 w200, ,Отжимания, progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Отжимания, progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка отжимания.{Enter}
@@ -434,7 +434,7 @@
 
 	:?:/trenBegGus::
 		Sleep(100)
-		Progress, b y10 w200, ,Тренировка бег гуськом, progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Тренировка бег гуськом, progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка бег гуськом.{Enter}
@@ -485,7 +485,7 @@
 
 	:?:/trenBeg::
 		Sleep(100)
-		Progress, b y10 w200, ,Тренировка бег , progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Тренировка бег , progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка бег.{Enter}
@@ -536,7 +536,7 @@
 
 	:?:/trenBegPrg::
 		Sleep(100)
-		Progress, b y10 w200, ,Тренировка бег с прыжками, progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Тренировка бег с прыжками, progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка бег с прыжками.{Enter}
@@ -587,7 +587,7 @@
 
 	:?:/trenPolt::
 		Sleep(100)
-		Progress, b y10 w200, ,Тренировка полтора, progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Тренировка полтора, progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка полтора.{Enter}
@@ -638,7 +638,7 @@
 
 	:?:/trenPris::
 		Sleep(100)
-		Progress, b y10 w200, ,Тренировка присядания, progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Тренировка присядания, progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка присядания.{Enter}
@@ -689,7 +689,7 @@
 
 	:?:/trenPlank::
 		Sleep(100)
-		Progress, b y10 w200, ,Тренировка стойка в планке, progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Тренировка стойка в планке, progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка стойка в планке.{Enter}
@@ -740,7 +740,7 @@
 
 	:?:/trenPostr::
 		Sleep(100)
-		Progress, b y10 w200, ,Тренировка построение,progressNUM
+		Progress, b y10 w200 с7d7f7d, ,Тренировка построение,progressNUM
 		WinSet, Transparent, 150,progressNUM
 		Sleep(100) 
 		SendInput, Сейчас пройдёт тренировка построение.{Enter}
