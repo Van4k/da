@@ -350,15 +350,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
@@ -394,15 +401,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
@@ -438,15 +452,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
@@ -482,15 +503,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
@@ -526,15 +554,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
@@ -570,15 +605,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
@@ -614,15 +656,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
@@ -658,15 +707,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
@@ -702,15 +758,22 @@
 		Sleep(30000)
 		Progress, 20
 		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
 		Progress, 35
 		Sleep(30000)
-		Progress, 45
+		Progress, 40
 		Sleep(30000)
-		Progress, 55
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
 		Sleep(30000)
 		Progress, 80
 		Sleep(30000)
 		Progress, 90
+		Sleep(30000)
 		Sleep(100) 
 		SendInput {t}
 		Sleep(100)
