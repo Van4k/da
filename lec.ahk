@@ -255,6 +255,54 @@
 		reload
 	return
 
+	:?:/trenOFP::
+		Sleep(100)
+		Progress, b y10 w200, Тренировка ОФП, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка ОФП.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка ОФП окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+/*
+//////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////Лекции////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+	*/
 	:?:/lecPDD::
 		Sleep(200) 
 		SendInput, Здравствуйте , дамы и господа{Enter}
