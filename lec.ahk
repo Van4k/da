@@ -2,6 +2,7 @@
 #usehook
 #IfWinActive MTA: Province
 	pg1:
+		Gui, 1: Font, default
 		Gui, 1: Font, S45 C000000 , CURSIVE
 		Gui, 1: Font, S12,
 		Gui, 1: Add, Text, x2 y180 w290 h20 , Субординация. 
@@ -52,6 +53,7 @@
 		Gui, 1: Add, Text, x292 y680 w105 h20 , End
 		Gui, 1: Add, Text, x292 y710 w105 h20 , /sus
 		Gui, 1: Add, Button, x300 y770 h30 w100 gpg2, page-2
+		Gui, 1: Add, Button, x300 y740 h30 w100 gTrenpg1, трени
 		Gui, 1: Font, S9 Bold Italic,
 		Gui, 1: Add, Text, x2 y720 w550 h20 +BackGroundTrans , _______________________________________________________________________
 		Gui, 1: Add, Text, x2 y740 w280 h30 , #Откройте Бинд от имени Администратора, чтобы Бинд работал
@@ -59,9 +61,12 @@
 		Gui, 2: Destroy
 		Gui, 3: Destroy
 		Gui, 4: Destroy
+		Gui, 5: Destroy
+		Gui, 1: Font, default
 	return
 
 	pg2:
+		Gui, 2: Font, default
 		Gui, 2: Font, S45 C000000 , CURSIVE
 		Gui, 2: Font, S12,
 		Gui, 2: Add, Text, x2 y180 w290 h20 , Что запрещено сотруднику.
@@ -119,9 +124,11 @@
 		Gui, 1: Destroy
 		Gui, 3: Destroy
 		Gui, 4: Destroy
+		Gui, 2: Font, default
 	return
 
 	pg3:
+		Gui, 3: Font, default
 		Gui, 3: Font, S45 C000000 , CURSIVE
 		Gui, 3: Font, S12,
 		Gui, 3: Add, Text, x2 y180 w290 h20 , Проведение штурма
@@ -179,9 +186,11 @@
 		Gui, 1: Destroy
 		Gui, 2: Destroy
 		Gui, 4: Destroy
+		Gui, 3: Font, default
 	return
 
 	pg4:
+		Gui, 4: Font, default
 		Gui, 4: Font, S45 C000000 , CURSIVE
 		Gui, 4: Font, S12,
 		Gui, 4: Add, Text, x2 y180 w290 h20 , Методичка ареста
@@ -238,6 +247,72 @@
 		Gui, 1: Destroy
 		Gui, 2: Destroy
 		Gui, 3: Destroy
+		Gui, 4: Font, default
+	return
+
+	Trenpg1:
+		Gui, 5: Font, default
+		Gui, 5: Font, S45 C000000 , CURSIVE
+		Gui, 5: Font, S12,
+		Gui, 5: Add, Text, x2 y180 w290 h20 , Тренировка ОФП
+		Gui, 5: Add, Text, x2 y210 w290 h20 , Тренировка Отжимания
+		Gui, 5: Add, Text, x2 y240 w290 h20 , Тренировка Бег гуськом
+		Gui, 5: Add, Text, x2 y270 w290 h20 , Тренировка Бег
+		Gui, 5: Add, Text, x2 y300 w290 h20 , Тренировка Бег с прыжками
+		Gui, 5: Add, Text, x2 y330 w290 h20 , Тренировка Полтора
+		Gui, 5: Add, Text, x2 y360 w290 h20 , Тренировка Присядания
+		Gui, 5: Add, Text, x2 y390 w290 h20 , Тренировка Планка
+		Gui, 5: Add, Text, x2 y420 w290 h20 , Тренировка Построения
+		Gui, 5: Add, Text, x2 y450 w290 h20 , Тренировка
+		Gui, 5: Add, Text, x2 y480 w290 h20 , Тренировка
+		Gui, 5: Add, Text, x2 y510 w290 h20 , Тренировка
+		Gui, 5: Add, Text, x2 y540 w290 h20 , Тренировка
+		Gui, 5: Add, Text, x2 y570 w290 h20 , Тренировка
+		Gui, 5: Add, Text, x2 y600 w290 h20 , Тренировка
+		Gui, 5: Add, Text, x2 y630 w290 h20 , 
+		Gui, 5: Add, Text, x2 y680 w290 h20 , Принудительная остановка лекции.
+		Gui, 5: Add, Text, x2 y710 w290 h20 , Прекратить активацию.
+		Gui, 5: Font, default
+		Gui, 5: Font, S11 CDefault, Verdana
+		Gui, 5: Add, Text, x2 y120 w170 h40 , Какое действие совершается:
+		Gui, 5: Add, Text, x232 y120 w170 h40 , Команда активации бинда:
+		Gui, 5: show, center h800 w400,
+		Gui, 5: Font, S40 C000000 Bold, CURSIVE
+		Gui, 5: add, text, x15 y25 w440 h100 , Тренировки
+		Gui, 5: Font, default
+		Gui, 5: Font, S20 C000000 Bold, CURSIVE
+		Gui, 5: Add, Text, x0 y160 w400 h20 , ______________________________________________________________________
+		Gui, 5: Font, default
+		Gui, 5: Font, S12 CDefault Bold, Verdana
+		Gui, 5: Add, Text, x292 y180 w105 h20 , /trenOFP
+		Gui, 5: Add, Text, x292 y210 w105 h20 , /trenOtj
+		Gui, 5: Add, Text, x292 y240 w105 h20 , /trenBegGus
+		Gui, 5: Add, Text, x292 y270 w105 h20 , /trenBeg
+		Gui, 5: Add, Text, x292 y300 w105 h20 , /trenBegPrg
+		Gui, 5: Add, Text, x292 y330 w105 h20 , /trenPolt
+		Gui, 5: Add, Text, x292 y360 w105 h20 , /trenPris
+		Gui, 5: Add, Text, x292 y390 w105 h20 , /trenPlank
+		Gui, 5: Add, Text, x292 y420 w105 h20 , /trenPostr
+		Gui, 5: Add, Text, x292 y450 w105 h20 , 
+		Gui, 5: Add, Text, x292 y480 w105 h20 , 
+		Gui, 5: Add, Text, x292 y510 w105 h20 , 
+		Gui, 5: Add, Text, x292 y540 w105 h20 , 
+		Gui, 5: Add, Text, x292 y570 w105 h20 , 
+		Gui, 5: Add, Text, x292 y600 w105 h20 , 
+		Gui, 5: Add, Text, x292 y630 w105 h20 , 
+		Gui, 5: Add, Text, x292 y680 w105 h20 , End
+		Gui, 5: Add, Text, x292 y710 w105 h20 , /sus
+		Gui, 5: Font, default
+		Gui, 5: Add, Button, x300 y770 h30 w100 gpg1, лекции
+		Gui, 5: Font, S9 Bold Italic,
+		Gui, 5: Add, Text, x2 y720 w550 h20 +BackGroundTrans , _______________________________________________________________________
+		Gui, 5: Add, Text, x2 y740 w280 h30 , #Откройте Бинд от имени Администратора, чтобы Бинд работал
+		Gui, 5: Add, Text, x2 y770 w280 h30 gVK, by vk.com/van4k.jesus
+		Gui, 1: Destroy
+		Gui, 2: Destroy
+		Gui, 3: Destroy
+		Gui, 4: Destroy
+		Gui, 5: Font, default
 	return
 
 	VK:
