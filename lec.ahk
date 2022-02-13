@@ -263,12 +263,12 @@
 		Gui, 5: Add, Text, x2 y360 w290 h20 , Тренировка Присядания
 		Gui, 5: Add, Text, x2 y390 w290 h20 , Тренировка Планка
 		Gui, 5: Add, Text, x2 y420 w290 h20 , Тренировка Построения
-		Gui, 5: Add, Text, x2 y450 w290 h20 , Тренировка
-		Gui, 5: Add, Text, x2 y480 w290 h20 , Тренировка
-		Gui, 5: Add, Text, x2 y510 w290 h20 , Тренировка
-		Gui, 5: Add, Text, x2 y540 w290 h20 , Тренировка
-		Gui, 5: Add, Text, x2 y570 w290 h20 , Тренировка
-		Gui, 5: Add, Text, x2 y600 w290 h20 , Тренировка
+		Gui, 5: Add, Text, x2 y450 w290 h20 , Тренировка Бой с тенью
+		Gui, 5: Add, Text, x2 y480 w290 h20 , Мероприятие Тир
+		Gui, 5: Add, Text, x2 y510 w290 h20 , Мероприятие Погоня
+		Gui, 5: Add, Text, x2 y540 w290 h20 , Мероприятие Прыжки с парашютом
+		Gui, 5: Add, Text, x2 y570 w290 h20 , Мероприятие Дерби
+		Gui, 5: Add, Text, x2 y600 w290 h20 , Мероприятие Перестрелка
 		Gui, 5: Add, Text, x2 y630 w290 h20 , 
 		Gui, 5: Add, Text, x2 y680 w290 h20 , Принудительная остановка лекции.
 		Gui, 5: Add, Text, x2 y710 w290 h20 , Прекратить активацию.
@@ -281,7 +281,7 @@
 		Gui, 5: add, text, x15 y25 w440 h100 , Тренировки
 		Gui, 5: Font, default
 		Gui, 5: Font, S20 C000000 Bold, CURSIVE
-		Gui, 5: Add, Text, x0 y160 w400 h20 , ______________________________________________________________________
+		Gui, 5: Add, Text, x0 y160 w400 h20 +BackGroundTrans , ______________________________________________________________________
 		Gui, 5: Font, default
 		Gui, 5: Font, S12 CDefault Bold, Verdana
 		Gui, 5: Add, Text, x292 y180 w105 h20 , /trenOFP
@@ -293,12 +293,12 @@
 		Gui, 5: Add, Text, x292 y360 w105 h20 , /trenPris
 		Gui, 5: Add, Text, x292 y390 w105 h20 , /trenPlank
 		Gui, 5: Add, Text, x292 y420 w105 h20 , /trenPostr
-		Gui, 5: Add, Text, x292 y450 w105 h20 , 
-		Gui, 5: Add, Text, x292 y480 w105 h20 , 
-		Gui, 5: Add, Text, x292 y510 w105 h20 , 
-		Gui, 5: Add, Text, x292 y540 w105 h20 , 
-		Gui, 5: Add, Text, x292 y570 w105 h20 , 
-		Gui, 5: Add, Text, x292 y600 w105 h20 , 
+		Gui, 5: Add, Text, x292 y450 w105 h20 , /trenBoy
+		Gui, 5: Add, Text, x292 y480 w105 h20 , /mpTir
+		Gui, 5: Add, Text, x292 y510 w105 h20 , /mpPog
+		Gui, 5: Add, Text, x292 y540 w105 h20 , /mpPar
+		Gui, 5: Add, Text, x292 y570 w105 h20 , /mpDerbi
+		Gui, 5: Add, Text, x292 y600 w105 h20 , /mpPer
 		Gui, 5: Add, Text, x292 y630 w105 h20 , 
 		Gui, 5: Add, Text, x292 y680 w105 h20 , End
 		Gui, 5: Add, Text, x292 y710 w105 h20 , /sus
@@ -786,6 +786,352 @@
 		Sendinput , {F12}
 		Progress, 100
 		Sleep(400)
+		Progress, Off
+	return
+
+	:?:/trenBoy::
+		Sleep(100)
+		Progress, b y10 w200 с7d7f7d, ,Бой с тенью, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт тренировка Бой с тенью.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 40
+		Sleep(30000)
+		Progress, 50
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(30000)
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Тренировка Бой с тенью окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/mpTir::
+		Sleep(100)
+		Progress, b y10 w200 с7d7f7d, ,Тир, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт мероприятие стрельба в тире.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 15
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 40
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 50
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(30000)
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Мероприятие стрельба в тире окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/mpPog::
+		Sleep(100)
+		Progress, b y10 w200 с7d7f7d, ,Погоня, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт мероприятие Погоня.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 15
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 40
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 50
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(30000)
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Мероприятие Погоня окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/mpPar::
+		Sleep(100)
+		Progress, b y10 w200 с7d7f7d, ,Прыжки с парашютом, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт мероприятие Прыжки с парашютом.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 15
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 40
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 50
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(30000)
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Мероприятие Прыжки с парашютом окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/mpDerbi::
+		Sleep(100)
+		Progress, b y10 w200 с7d7f7d, ,Дерби, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт мероприятие Дерби.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 15
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 40
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 50
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90
+		Sleep(30000)
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Мероприятие Дерби окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
+		Progress, Off
+	return
+
+	:?:/mpPer::
+		Sleep(100)
+		Progress, b y10 w200, ,Перестрелка, progressNUM
+		WinSet, Transparent, 150,progressNUM
+		Sleep(100) 
+		SendInput, Сейчас пройдёт мероприятие Перестрелка.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(500) 
+		Sendinput , {F12}
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Начали.{Enter}
+		Progress, 10
+		Sleep(30000)
+		Progress, 15 
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 20
+		Sleep(30000)
+		Progress, 30
+		Sleep(30000)
+		Progress, 35
+		Sleep(30000)
+		Progress, 40
+		Sleep(30000)
+		Progress, 45
+		Sleep(30000)
+		Progress, 50
+		Sleep(30000)
+		Progress, 55
+		Sleep(30000)
+		Progress, 60
+		Sleep(30000)
+		Progress, 70
+		Sleep(30000)
+		Progress, 80
+		Sleep(30000)
+		Progress, 90 
+		Sleep(30000)
+		Sleep(100) 
+		SendInput {t}
+		Sleep(100)
+		SendInput, Мероприятие Перестрелка окончена.{Enter}
+		Sleep(100) 
+		Sendinput , {t}
+		Sleep(100) 
+		Sendinput , /timestamp{Enter}
+		Sleep(200) 
+		Sendinput , {F12}
+		Progress, 100
+		Sleep(200)
 		Progress, Off
 	return
 /*
