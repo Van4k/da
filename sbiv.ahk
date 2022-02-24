@@ -5,7 +5,7 @@
 
 	FormatTime, time,, HH:mm:ss
 
-	SetTimer, Timer1, 600000
+	;SetTimer, Timer1, 600000
 	SetTimer, Timer3, % Rand3 * 600000
 	SetTimer, Random1, 3000
 	/* SetTimer, refresh, 1000
@@ -34,7 +34,7 @@ return
 		Random, Rand3, 4,10
 	return
 
-	Timer1:
+	/*Timer1:
 		Sleep, 100
 		Sendinput , {t}
 		Sleep, 100
@@ -45,8 +45,8 @@ return
 		Sendinput, /timestamp{Enter}
 		Sleep, 500
 		Sendinput, {f12} 
-	return
-
+	return 
+	*/
 	Timer3:
 		Random, Rand2, 4, 10	
 		Sleep, % Rand2 * 6000
