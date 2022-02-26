@@ -1,4 +1,4 @@
-﻿
+
 #IfWinActive MTA: Province
 	#SingleInstance force
 	#Persistent
@@ -8,8 +8,8 @@
 	;SetTimer, Timer1, 600000
 	SetTimer, Timer3, % Rand3 * 600000
 	SetTimer, Random1, 3000
-	/* SetTimer, refresh, 1000
-	*/ Settimer, Dd, 1000
+	;SetTimer, refresh, 1000
+	Settimer, Dd, 1000
 
 	FormatSeconds(NumberOfSeconds) ; Преобразует заданное число секунд
 	; к формату hh:mm:ss.
@@ -45,7 +45,7 @@ return
 		Sendinput, /timestamp{Enter}
 		Sleep, 500
 		Sendinput, {f12} 
-	return 
+	return
 	*/
 	Timer3:
 		Random, Rand2, 4, 10	
