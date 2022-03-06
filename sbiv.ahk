@@ -6,7 +6,7 @@
 	FormatTime, time,, HH:mm:ss
 
 	;SetTimer, Timer1, 600000
-	SetTimer, Timer3, % Rand3 * 600000
+	SetTimer, Timer3, % Rand3 * 600000, 101
 	SetTimer, Random1, 3000
 	;SetTimer, refresh, 1000
 	Settimer, Dd, 1000
